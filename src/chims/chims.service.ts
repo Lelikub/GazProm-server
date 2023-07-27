@@ -15,6 +15,7 @@ export class ChimsService {
             return H
         }
         let co2: number[] = [0.23568130E+01, 0.89841299E-02, 2-0.71220632E-05,  0.24573008E-08, -0.14288548E-12]
+        
         let Q : number = Hf(co2)
         console.log(Q)
     }
