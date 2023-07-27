@@ -10,7 +10,14 @@ export class ChimsController {
 
     }
 
-    @Get()
+    @Post()
+    create(@Body() CreateChimsDto: CreateChimsDto) {
+        return this.chimsService.chimCal(CreateChimsDto)
+         
+    }
+
+
+   /* @Get()
     getAll(){
         return this.chimsService.getAll()
     }
@@ -35,5 +42,5 @@ export class ChimsController {
     @Put(':id')
     update(@Body() updateChimsDto: UpdateProductDto, @Param('id') id: string){
         return "Update " + id
-    }
+    }*/
 }
